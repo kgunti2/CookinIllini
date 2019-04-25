@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CookinIllini"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ChoosingFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/what_would_you_like_to_cook_today"
+        app:layout_constraintBottom_toTopOf="@+id/TheAarthiBurger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/TheAarthiBurger"
+        android:layout_width="161dp"
+        android:layout_height="138dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/burgerAarthi"
+        android:src="@drawable/burgerAarthi"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChoosingFoodItem"
+        tools:srcCompat="@drawable/burgerAarthi"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/the_aarthi_burger"
+        app:layout_constraintBottom_toTopOf="@+id/KeertanaTaco"
+        app:layout_constraintStart_toStartOf="@+id/TheAarthiBurger"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/KeertanaTaco"
+        android:layout_width="178dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="19dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/taco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burger"
+        app:srcCompat="@drawable/tacoYum"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/taco"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/keertana_s_taco"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/KeertanaTaco" />
+
+    <TextView
+        android:id="@+id/pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/pasta_a_la_keerthi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/burger"
+        app:layout_constraintEnd_toEndOf="@+id/TheAarthiBurger"
+        app:layout_constraintTop_toBottomOf="@+id/TheAarthiBurger"
+        app:srcCompat="@android:color/background_light" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="166dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="13dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/pasta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taco"
+        app:srcCompat="@drawable/pastaKeerthi" />
+
+</android.support.constraint.ConstraintLayout>
