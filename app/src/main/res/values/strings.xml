@@ -4,4 +4,22 @@
     <string name="keertana_s_taco">Keertana\'s Taco</string>
     <string name="pasta_a_la_keerthi">Pasta A La Keerthi</string>
     <string name="the_aarthi_burger">The Aarthi Burger</string>
+    <string name="what_condiment">What condiment?</string>
+
+    <string name="congrats_you_have_successfully_made_the_aarthi_burger">Congrats! You have successfully made the Aarthi Burger!</string>
+    <string name="what_kind_of_cheese">What kind of cheese?</string>
+
+    <string name="what_type_of_bread">What type of bread?</string>
+
+    <string name="pickles_or_tomatoes">Pickles or Tomatoes?</string>
+
+    <string name="what_type_of_patty">What type of patty?</string>
+    <string name="play_video">Play Video</string>
+    <string name="button">Button</string>
+    <string name="watch_video">Watch Video</string>
+    <string name="great_job_making_the_aarthi_burger">Great Job Making the Aarthi Burger!!</string>
+    <string name="interested_in_learning_more">Interested in learning more?</string>
+    <string name="todo">TODO</string>
+    <string name="what_type_of_pasta">What type of pasta?</string>
+
 </resources>

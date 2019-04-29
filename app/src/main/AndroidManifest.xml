@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cookinillini">
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -16,6 +19,80 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".BurgerBread"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".BurgerPatty"
+            android:parentActivityName=".BurgerBread">
+        </activity>
+
+        <activity android:name=".BurgerCheese"
+            android:parentActivityName=".BurgerPatty">
+        </activity>
+
+        <activity android:name=".BurgerVegetable"
+            android:parentActivityName=".BurgerCheese">
+        </activity>
+
+        <activity android:name=".BurgerCondiments"
+            android:parentActivityName=".BurgerVegetable">
+        </activity>
+
+        <activity android:name=".BurgerFinal"
+            android:parentActivityName=".BurgerCondiments">
+        </activity>
+
+        <activity android:name=".TacoShell"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".TacoProtein"
+            android:parentActivityName=".TacoShell">
+        </activity>
+
+        <activity android:name=".TacoCheese"
+            android:parentActivityName=".TacoProtein">
+        </activity>
+
+        <activity android:name=".TacoVegetables"
+            android:parentActivityName=".TacoCheese">
+        </activity>
+
+        <activity android:name=".TacoCondiments"
+            android:parentActivityName=".TacoVegetables">
+        </activity>
+
+        <activity android:name=".TacoFinal"
+            android:parentActivityName=".TacoCondiments">
+        </activity>
+
+        <activity android:name=".PastaType"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".PastaSauce"
+            android:parentActivityName=".PastaType">
+        </activity>
+
+        <activity android:name=".PastaMeat"
+            android:parentActivityName=".PastaSauce">
+        </activity>
+
+        <activity android:name=".PastaCheese"
+            android:parentActivityName=".PastaMeat">
+        </activity>
+
+        <activity android:name=".PastaExtras"
+            android:parentActivityName=".PastaCheese">
+        </activity>
+
+        <activity android:name=".PastaFinal"
+            android:parentActivityName=".PastaExtras">
+        </activity>
+
+
     </application>
 
 </manifest>

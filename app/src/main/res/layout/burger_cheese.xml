@@ -7,13 +7,13 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="361dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_width="355dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="98dp"
-        android:text="What kind of cheese?"
+        android:text="@string/what_kind_of_cheese"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/swiss"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,8 @@
 
     <ImageButton
         android:id="@+id/swiss"
-        android:layout_width="0dp"
-        android:layout_height="216dp"
+        android:layout_width="283dp"
+        android:layout_height="185dp"
         android:layout_marginStart="46dp"
         android:layout_marginLeft="46dp"
         android:layout_marginEnd="46dp"
@@ -30,23 +30,25 @@
         android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toTopOf="@+id/pepperjack"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/swissCheese" />
+        app:srcCompat="@drawable/swisscheese" />
 
     <ImageButton
         android:id="@+id/pepperjack"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="294dp"
+        android:layout_height="221dp"
         android:layout_marginStart="42dp"
         android:layout_marginLeft="42dp"
         android:layout_marginEnd="42dp"
         android:layout_marginRight="42dp"
         android:layout_marginBottom="41dp"
+        android:contentDescription=""
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swiss"
-        app:srcCompat="@drawable/pepperjackCheese" />
+        app:srcCompat="@drawable/pepperjackcheese" />
 </android.support.constraint.ConstraintLayout>

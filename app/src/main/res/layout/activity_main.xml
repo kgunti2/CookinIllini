@@ -9,79 +9,90 @@
 
     <TextView
         android:id="@+id/ChoosingFoodItem"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="9dp"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="5dp"
         android:text="@string/what_would_you_like_to_cook_today"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/TheAarthiBurger"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <ImageButton
         android:id="@+id/TheAarthiBurger"
-        android:layout_width="161dp"
-        android:layout_height="138dp"
+        android:layout_width="157dp"
+        android:layout_height="116dp"
         android:layout_marginBottom="7dp"
-        android:background="@drawable/burgerAarthi"
-        android:src="@drawable/burgerAarthi"
+        android:background="@drawable/burgeraarthi"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/burgeraarthi"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ChoosingFoodItem"
-        tools:srcCompat="@drawable/burgerAarthi"
-        android:contentDescription="TODO" />
+        tools:srcCompat="@drawable/burgeraarthi" />
 
     <TextView
         android:id="@+id/burger"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
+        android:layout_width="134dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="45dp"
         android:text="@string/the_aarthi_burger"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/KeertanaTaco"
         app:layout_constraintStart_toStartOf="@+id/TheAarthiBurger"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
         android:id="@+id/KeertanaTaco"
-        android:layout_width="178dp"
-        android:layout_height="117dp"
+        android:layout_width="177dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="19dp"
+        android:contentDescription="TODO"
         android:scaleType="centerCrop"
+        android:src="@drawable/tacoyum"
         app:layout_constraintBottom_toTopOf="@+id/taco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/burger"
-        app:srcCompat="@drawable/tacoYum"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/burger" />
 
     <TextView
         android:id="@+id/taco"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:layout_marginBottom="18dp"
         android:text="@string/keertana_s_taco"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/KeerthiPasta"
+        app:layout_constraintEnd_toEndOf="@+id/KeerthiPasta"
         app:layout_constraintTop_toBottomOf="@+id/KeertanaTaco" />
 
     <TextView
         android:id="@+id/pasta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="70dp"
         android:text="@string/pasta_a_la_keerthi"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintStart_toStartOf="@+id/KeerthiPasta"
+        app:layout_constraintTop_toBottomOf="@+id/KeerthiPasta" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -90,21 +101,22 @@
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
         android:layout_marginBottom="14dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/burger"
         app:layout_constraintEnd_toEndOf="@+id/TheAarthiBurger"
         app:layout_constraintTop_toBottomOf="@+id/TheAarthiBurger"
         app:srcCompat="@android:color/background_light" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="166dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="13dp"
+        android:id="@+id/KeerthiPasta"
+        android:layout_width="170dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="30dp"
         android:scaleType="centerCrop"
+        android:src="@drawable/pastakeerthi"
         app:layout_constraintBottom_toTopOf="@+id/pasta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taco"
-        app:srcCompat="@drawable/pastaKeerthi" />
+        app:layout_constraintTop_toBottomOf="@+id/taco" />
 
 </android.support.constraint.ConstraintLayout>

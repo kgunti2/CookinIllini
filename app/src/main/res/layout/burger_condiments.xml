@@ -44,7 +44,7 @@
         android:layout_marginStart="41dp"
         android:layout_marginLeft="41dp"
         android:layout_marginTop="41dp"
-        android:text="What condiment?"
+        android:text="@string/what_condiment"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/ketchup"
         app:layout_constraintStart_toStartOf="@+id/ketchup"
